@@ -60,7 +60,7 @@ The final 3D render presents a stylized, high-quality, and modern look of the le
 
 ### Technical Drawings & CAD Workspace
 
-Below is the dimensioned 2D sketch :
+Below is the dimensioned 3D sketch :
 
 <img width="977" height="640" alt="Screenshot 2026-07-19 175134" src="https://github.com/user-attachments/assets/91f0e7a9-c195-4a12-a869-bfb83d4e1e60" />
 
