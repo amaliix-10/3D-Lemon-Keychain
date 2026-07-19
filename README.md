@@ -17,18 +17,33 @@ To capture a highly realistic, organic shape rather than a standard ellipsoid, a
   * **Tip Constraints:** The upper and lower tips feature precise height offsets of **$1.5\text{ mm}$**, horizontal offsets of **$3\text{ mm}$**, and internal arc radii constraints of **$2\text{ mm}$** for strict shape control.
 * **Geometric Constraints:** Applied **Tangent Constraints** between the main body arc and the polar conic sections to ensure a seamless, fluid transition (**G1 Continuity**).
 
-## 📸 Technical Drawings & CAD Workspace
+## Technical Drawings & CAD Workspace
 
-Below is the dimensioned 2D sketch profile used to generate the organic lemon geometry:
+Below is the dimensioned 2D sketch :
+
 <img width="505" height="496" alt="Screenshot 2026-07-19 172345" src="https://github.com/user-attachments/assets/ecc34997-7ff9-49dd-bacc-770afad767d7" />
 
-### 2. Mechanical Integration: The Keychain Loop
-A critical aspect of functional 3D prints is structural integrity. The hanging loop was designed to withstand real-world mechanical stress:
-* **Plane Offset & Sketching:** A new sketch was initiated on the *Top Plane*, structurally aligned with the absolute peak of the upper protrusion.
-* **Concentric Sizing:** Sketched two concentric circles with a shared center point:
-  * **Inner Diameter ($6\text{ mm}$):** Sized to provide ample clearance for standard metal split-rings or ball-chain keychains.
-  * **Outer Diameter ($10\text{ mm}$):** Establishes a robust $2\text{ mm}$ solid wall thickness to resist shear stress.
-* **Symmetric Extrusion & Boolean Fusion:** The profile was extruded using a **Symmetric** setting with a depth of $4\text{ mm}$. Crucially, the operation was set to **Add** with the *Merge Scope* locked onto the lemon body. This executes a Boolean union, fusing the crystalline structures of both shapes into a single, uniform solid part rather than two intersecting components, eliminating weak boundary planes.
+### 2. Designing the Keychain Loop & Attached Leaf Geometry
+To complete the keychain assembly with structural functionality and organic aesthetics, a mechanical loop, connecting stem, and leaf were integrated into a specialized sketch:
+
+* **The Keychain Loop (The Hole):** 
+  * Initiated a circle centralized near the top tip of the lemon body to act as the primary clearance hole for the split-ring.
+  * Used precise vertical and horizontal alignment constraints relative to the main axis of the lemon to ensure optimal structural placement.
+* **The Connecting Stem:**
+  * Sketched a smooth, organic curved guide line extending upwards from the top protrusion using arc tools to simulate a natural plant stem.
+  * Extended a vertical construction reference line to control the height and stability of the leaf's attachment point.
+* **The Leaf Profile:**
+  * Constructed a closed leaf envelope using symmetrical upper and lower arcs meeting at a defined sharp tip.
+  * Added a central dividing line inside the leaf profile to represent the natural leaf vein and to stabilize the geometric parameters.
+* **Extrusion & Boolean Fusion:** 
+  * Extruded the mechanical loop and the leaf profile concurrently to create uniform solid thickness.
+  * Applied an **Add** operation to executing a Boolean fusion, seamlessly unifying the loop, stem, leaf, and lemon body into a single, high-strength component ready for physical loading.
+
+## Technical Drawings & CAD Workspace
+
+Below is the dimensioned 2D sketch :
+<img width="743" height="460" alt="Screenshot 2026-07-19 173413" src="https://github.com/user-attachments/assets/052cb169-abd0-40fc-9e77-e072667c9cc2" />
+
 
 ### 3. Stress Concentration Relief & Post-Processing
 * **Fillet Feature Application:** Sharp internal corners act as "stress concentrators" where structural failure typically occurs. A $1\text{ mm}$ **Fillet** was applied to the boundary intersection where the loop meets the lemon body. This distributes mechanical load evenly and enhances printability by eliminating sharp $90^\circ$ overhang transitions.
