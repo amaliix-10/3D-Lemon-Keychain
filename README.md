@@ -17,7 +17,7 @@ To capture a highly realistic, organic shape rather than a standard ellipsoid, a
   * **Tip Constraints:** The upper and lower tips feature precise height offsets of **$1.5\text{ mm}$**, horizontal offsets of **$3\text{ mm}$**, and internal arc radii constraints of **$2\text{ mm}$** for strict shape control.
 * **Geometric Constraints:** Applied **Tangent Constraints** between the main body arc and the polar conic sections to ensure a seamless, fluid transition (**G1 Continuity**).
 
-## Technical Drawings & CAD Workspace
+### Technical Drawings & CAD Workspace
 
 Below is the dimensioned 2D sketch :
 
@@ -39,26 +39,32 @@ To complete the keychain assembly with structural functionality and organic aest
   * Extruded the mechanical loop and the leaf profile concurrently to create uniform solid thickness.
   * Applied an **Add** operation to executing a Boolean fusion, seamlessly unifying the loop, stem, leaf, and lemon body into a single, high-strength component ready for physical loading.
 
-## Technical Drawings & CAD Workspace
+### Technical Drawings & CAD Workspace
 
 Below is the dimensioned 2D sketch :
+
 <img width="743" height="460" alt="Screenshot 2026-07-19 173413" src="https://github.com/user-attachments/assets/052cb169-abd0-40fc-9e77-e072667c9cc2" />
 
 
-### 3. Stress Concentration Relief & Post-Processing
-* **Fillet Feature Application:** Sharp internal corners act as "stress concentrators" where structural failure typically occurs. A $1\text{ mm}$ **Fillet** was applied to the boundary intersection where the loop meets the lemon body. This distributes mechanical load evenly and enhances printability by eliminating sharp $90^\circ$ overhang transitions.
-* **Mesh Optimization:** The part geometry was evaluated, and the final solid model was exported using **Fine Resolution** into an **STL** mesh, minimizing chordal error for flawless slicing.
+
+### 3. The Final Model & Aesthetic Result
+
+The final 3D render presents a stylized, high-quality, and modern look of the lemon keychain, blending organic shapes with smooth flat-face features for optimized printing:
+
+* **Sleek Flat-Faceted Design:** The main body features flat parallel faces with beautifully swept organic curved profiles, giving it a modern minimalist look while providing an excellent flat surface for optimal 3D printing bed adhesion.
+* **Functional Integrated Features:** 
+  * The top section displays the completed mechanical clearance hole, seamlessly positioned within the upper protrusion.
+  * The bottom protrusion includes a detailed concentric inner circle definition, emphasizing the natural geometry of the fruit.
+* **Organic Plant Extensions:** The upper stem and leaf profiles remain visibly integrated with the main solid body, adding a dynamic, natural contrast to the geometric lines of the keychain.
+* **Production-Ready Geometry:** The uniform thickness and lack of complex overhangs make this model highly optimized for clean, support-free or minimal-support manufacturing across various FDM 3D printers.
+
+### Technical Drawings & CAD Workspace
+
+Below is the dimensioned 2D sketch :
+
+<img width="977" height="640" alt="Screenshot 2026-07-19 175134" src="https://github.com/user-attachments/assets/91f0e7a9-c195-4a12-a869-bfb83d4e1e60" />
+
 
 ---
 
-## 🖨️ Technical Slicing & 3D Print Settings
 
-Optimized for Fused Deposition Modeling (FDM) printers:
-* **Material:** PLA (Polylactic Acid) or PETG for excellent layer adhesion and tensile strength.
-* **Infill Density:** $15\% - 20\%$ is sufficient due to the structural fillets.
-* **Infill Pattern:** **Gyroid** or **Grid** (Gyroid provides uniform isotropic strength in all directions).
-* **Layer Height:** $0.12\text{ mm}$ (High Detail) to $0.20\text{ mm}$ (Standard). Smaller layer heights reduce the stair-stepping effect on the curved top surfaces.
-* **Orientation:** Print standing vertically (with the flat base or loop facing upwards) or sliced horizontally depending on your support preference. Minimal supports are required only underneath the horizontal bridge of the keychain loop.
-
----
-*Designed with engineering precision using Onshape.*
